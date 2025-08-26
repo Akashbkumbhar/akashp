@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Akash Kumbhar-Portfolio</title>
@@ -105,7 +107,7 @@ main hr{
         font-size:1.9rem ;
     }
     .secondSection .box{
-        background: rgb(12, 60, 173);
+        background: rgb(29, 43, 75);
         width:80vw;
         height: 23px;
         margin:56px 0;
@@ -194,6 +196,161 @@ main hr{
         background-color: #13192f;
         transition: background-color 0.3s ease;
     }
+
+
+   .resume-btn {
+    padding: 10px 20px;
+    background-color: #1a1a2e;
+    color: white;
+    border: 1px solid #444;
+    border-radius: 6px;
+    font-size: 6px;
+    font-weight: 250;
+    text-decoration: none;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.resume-btn:hover {
+    background-color: #2e2e4e;
+    transform: translateY(-2px);
+}
+
+.resume-btn:active {
+    transform: translateY(0);
+}
+.projects-line {
+    height: auto;
+    background: rgb(12, 60, 173); /* blue line */
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    padding: 10px 16px;
+    border-radius: 8px;
+    color: #fff;
+    font-weight: 500;
+    flex-wrap: wrap; /* allows wrapping on small screens */
+}
+
+.project-item {
+    white-space: nowrap;
+}
+
+.project-link {
+    color: #ffd700;  /* gold for visibility */
+    text-decoration: none;
+    margin-left: 6px;
+    font-weight: 600;
+}
+
+.project-link:hover {
+    text-decoration: underline;
+}
+
+.sep {
+    opacity: 0.7;
+}
+/* ---------- Responsive Design ---------- */
+
+/* For tablets and smaller (max-width: 1024px) */
+@media (max-width: 1024px) {
+  .firstSection {
+    flex-direction: column;
+    text-align: center;
+    padding: 20px 0;
+  }
+
+  .firstSection > div {
+    width: 90%;
+  }
+
+  .rightSection img {
+    width: 60%;
+    margin: 20px 0;
+  }
+
+  .leftSection {
+    font-size: 28px;
+  }
+
+  .leftSection .Purple {
+    font-size: 36px;
+  }
+}
+
+/* For mobile phones (max-width: 768px) */
+@media (max-width: 768px) {
+  nav {
+    flex-direction: column;
+    height: auto;
+    padding: 10px 0;
+  }
+
+  nav ul {
+    flex-direction: column;
+    padding: 10px 0;
+  }
+
+  nav ul li {
+    margin: 10px 0;
+  }
+
+  .leftSection {
+    font-size: 22px;
+  }
+
+  .leftSection .Purple {
+    font-size: 28px;
+  }
+
+  .projects-line {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    padding: 12px;
+  }
+
+  .footer {
+    padding: 20px;
+  }
+
+  .footer-second ul {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .icon-circle {
+    width: 36px;
+    height: 36px;
+  }
+
+  .icon-circle img {
+    width: 20px;
+    height: 20px;
+  }
+}
+
+/* For very small screens (max-width: 480px) */
+@media (max-width: 480px) {
+  .leftSection {
+    font-size: 18px;
+  }
+
+  .leftSection .Purple {
+    font-size: 24px;
+  }
+
+  .resume-btn {
+    font-size: 16px;
+    padding: 8px 16px;
+  }
+
+  .projects-line {
+    font-size: 14px;
+  }
+}
+
+
+
   
     
          
@@ -206,8 +363,10 @@ main hr{
             <div class="right"></div>
             <ul>
                 <li><a href="/">Home</a></li>
-                <li><a href="react.pdf
-" download>Resume</a></li>
+                <li>  <a href="react.pdf" class="btn resume " download="Akash_Kumbhar_Resume.pdf">Resume</a></li>
+
+</li>
+
 
                 <li><a href="#Contact">Contact me</a></li>
             </ul>
@@ -223,14 +382,12 @@ main hr{
 
                
                 <span id="element"></span>
-                <div class="button">
-                    <a href="path/to/your/react.pdf" class="btn" download>Download Resume</a>
+                <div class="buttons">
+  <a href="react.pdf" class="btn resume-btn" download="Akash_Kumbhar_Resume.pdf">Download Resume</a>
 
-                        <link rel="stylesheet" href="">
+  </a>
+</div>
 
-                    </button>
-                   
-                </div>
 
             </div>
             <div class="rightSection">
@@ -242,23 +399,20 @@ main hr{
         <section class="secondSection">
             <span class="text-gray">What I have done so far</span>
             <h1>Projects</h1>
-            <div class="box">
-        <div class="vertical"></div>
-        <div class="vertical-text">
-            Food delivery
+            <div class="box projects-line">
+  <span class="project-item">
+    Online BookStore 
+    <a class="project-link" href="https://github.com/Akashbkumbhar/bookStore.git" target="_blank">[Click Here]</a>
+  </span>
+  <span class="sep">•</span>
+  <span class="project-item">
+    Deepfake Videos Detection using Deep Learning 
+    <a class="project-link" href="#" target="_blank">[Click Here]</a>
+  </span>
+</div>
 
-            <a href="">click here</a>
-
-        </div>
         
-        <div class="vertical"></div>
-            <div class="vertical-text">
-                Landing page
-
-                <a href="">click here</a>
-            </div>
         
-        <div class="vertical"></div>
         
 
         
